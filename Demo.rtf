@@ -1,0 +1,413 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fmodern\fprq1\fcharset0 Courier New;}{\f4\fnil\fprq0\fcharset0 Lucida Console;}{\f5\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f6\fmodern\fprq1\fcharset0 NSimSun;}{\f7\fnil\fprq2\fcharset0 Mangal;}{\f8\fnil\fprq0\fcharset128 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red147\green161\blue161;\red133\green153\blue0;\red0\green0\blue128;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033 Default;}
+{\*\cs15\snext15\cf4\ul\ulc0\langfe255\lang255\lang255 Internet Link;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\hich\af5\dbch\af7\afs28\loch\f2\fs28 Heading;}
+{\s17\sbasedon0\snext17\sb0\sa120 Text body;}
+{\s18\sbasedon17\snext18\sb0\sa120\dbch\af8 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af8\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af8 Index;}
+{\s21\sbasedon0\snext21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20 Preformatted Text;}
+}{\info{\creatim\yr2014\mo4\dy26\hr14\min10}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment OpenOffice.org}{\vern3410}}\deftab709
+
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\qc{\ul\ulc0\b\ab\rtlch \ltrch\loch
+Demonstration}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\qc{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+Included in this package of code is a "patents.csv" file. You may either place it in your working directory, or set your working directory to where it is located. Once that has been done, it can be loaded into RStudio by using the following command:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> df <- read.csv("patents.csv")}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+For the sake of organization, let us look at the variable names using the "names" command.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> names(df)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+[1] "applicationNumber"  "filingDate"         "status"             "allowanceDate"     }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+[5] "prosecutionLength"  "rejections"         "RCE"                "examinerInterviews"}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+[9] "tranhistory"        "continuity"         "foreign"  }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+We know, therefore that each row contains the above information for each patent collected using the code. Using the "head" command, we can see what that data looks like:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> head(df)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+  }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+applicationNumber filingDate             status allowanceDate prosecutionLength}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1           5907415       <NA> Unknown or Pending          <NA>                NA}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+2           5923999 1979-08-22            Allowed    1980-08-28               372}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3           5941084       <NA> Unknown or Pending          <NA>                NA}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+4           5964875 1980-04-15            Allowed    1980-04-15                 0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+5           6026681 1980-07-31            Allowed    1980-07-31                 0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+6           6038971 1979-10-24            Allowed    1979-10-24                 0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+  }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+rejections RCE examinerInterviews tranhistory continuity foreign}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1          0   0                  0           0          0       0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+2          1   0                  0           1          0       0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3          0   0                  0           0          0       0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+4          1   0                  0           1          0       0}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+5          1   0                  0           1          0       1}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+6          1   0                  0           1          0       0}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+From this we know that some patents are missing a transaction history, and therefore have "NA" values for undeterminable variables. For the purposes of data analysis, I suggest excluding the entries for which there are no transaction histories by doing as following:}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> df <- df[df$tranhistory ==1,]}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+Now that "df" consists of only patent applications with transaction histories, we can begin to investigate the data. The "summary" command is often helpful for this initial step.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+applicationNumber       filingDate                 status       allowanceDate}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   : 5923999   1998-02-03:  3   Abandoned         :106   1994-04-05:  3  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 8172049   2005-01-12:  3   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Allowed           :513}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+   2010-03-22:  3  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :10135314   2008-11-26:  3   Unknown or Pending:169   1984-07-12:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :12947405   2010-03-03:  3                            1988-05-06:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:12028862   1982-06-28:  2                            1989-02-13:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :95002403   1982-12-06:  2                            (Other)   :507  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                    }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+(Other)   :772                            NA's      :269  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+prosecutionLength   rejections          RCE        examinerInterviews tranhistory}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   :   0.0    Min.   : 0.000   Min.   :0.0000   Min.   :0.0000     Min.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 327.5    1st Qu.: 0.000   1st Qu.:0.0000   1st Qu.:0.0000     1st Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median : 538.0    Median : 1.000   Median :0.0000   Median :0.0000     Median :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   : 654.2    Mean   : 1.349   Mean   :0.1282   Mean   :0.2107     Mean   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.: 861.0    3rd Qu.: 2.000   3rd Qu.:0.0000   3rd Qu.:0.0000     3rd Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :3880.0    Max.   :13.000   Max.   :6.0000   Max.   :6.0000     Max.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+NA's   :269                                                                        }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+continuity        foreign      }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   :0.0000   Min.   :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.:0.0000   1st Qu.:0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :1.0000   Median :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :0.5381   Mean   :0.3731  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:1.0000   3rd Qu.:1.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :1.0000   Max.   :1.0000 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+We can narrow the investigation to the 513 allowed patent applications, if that is the kind of patents you are interested in learning about.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[df$status=="Allowed",])}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+applicationNumber       filingDate                 status       allowanceDate}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   : 5923999   1998-02-03:  3   Abandoned         :  0   1994-04-05:  3  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 7563817   1982-06-28:  2   Allowed           :513   2010-03-22:  3  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median : 8999199   1982-12-06:  2   Unknown or Pending:  0   1984-07-12:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   : 9477592   1984-10-17:  2                            1988-05-06:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:10742931   1986-01-31:  2                            1989-02-13:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :29085058   1987-06-30:  2                            1992-12-14:  2  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                    }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+(Other)   :500                            (Other)   :499  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+prosecutionLength   rejections          RCE       examinerInterviews  tranhistory}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   :   0.0    Min.   : 0.000   Min.   :0.0000   Min.   :0.0000     Min.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 325.0    1st Qu.: 1.000   1st Qu.:0.0000   1st Qu.:0.0000     1st Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median : 533.0    Median : 1.000   Median :0.0000   Median :0.0000     Median :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\ulnone\ulc0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   : 647.5}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ulnone\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   : 1.345}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+   Mean   :0.1248   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :0.2515}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+     Mean   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.: 852.0    3rd Qu.: 2.000   3rd Qu.:0.0000   3rd Qu.:0.0000     3rd Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :3880.0    Max.   :13.000   Max.   :6.0000   Max.   :4.0000     Max.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                                                                                    }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+continuity        foreign      }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   :0.0000   Min.   :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.:0.0000   1st Qu.:0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :0.0000   Median :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :0.4522   Mean   :0.3801  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:1.0000   3rd Qu.:1.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :1.0000   Max.   :1.0000 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+This already provides useful information for the investigator. For example, just from the above we have learned that 1/4 allowed patent applications in this sample have an examiner interview. We also have learned that allowed patent application in this sample have been rejected an average of 1.345 times each. We learned that the average prosecution length for an allowed patent application in this sample was 647.5 days. Let see how this compares with patent applications that were abandoned.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[df$status=="Abandoned",])}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+applicationNumber       filingDate                status       allowanceDate}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   : 6147815   1997-08-21: 2   Abandoned         :106   1982-06-30:  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 9949861   2001-09-10: 2   Allowed           :  0   1997-08-05:  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :10897444   2005-01-12: 2   Unknown or Pending:  0   1999-01-20:  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :10727367   1980-12-23: 1                            2003-04-07:  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:11554945   1983-10-12: 1                            2004-11-23:  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :29041336   1987-06-19: 1                            (Other)   :  1  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                    }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+(Other)   :97                            NA's      :100  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+prosecutionLength   rejections         RCE         examinerInterviews tranhistory}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   : 554.0    Min.   :0.000   Min.   :0.0000   Min.   :0.0000     Min.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.: 816.2    1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000     1st Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :1321.0    Median :2.000   Median :0.0000   Median :0.0000     Median :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :1228.7}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+    }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\ul\ulc0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :2.047}{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+   Mean   :0.1509   Mean   :0.1698     Mean   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:1505.5    3rd Qu.:2.000   3rd Qu.:0.0000   3rd Qu.:0.0000     3rd Qu.:1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :1961.0    Max.   :9.000   Max.   :3.0000   Max.   :2.0000     Max.   :1   }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+NA's   :100                                                                       }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+continuity        foreign      }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min.   :0.0000   Min.   :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+1st Qu.:0.0000   1st Qu.:0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Median :1.0000   Median :0.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Mean   :0.6415   Mean   :0.3679  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+3rd Qu.:1.0000   3rd Qu.:1.0000  }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+ }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Max.   :1.0000   Max.   :1.0000  }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+As opposed to their allowed counterparts, applications that are abandoned are done so, on average, by the 1228.7th day. Similarly, they have, on average, received 2.047 rejections. There are already useful distinctions betwee allowed and abandoned patent applications. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ul\ulc0\b\ab\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+Let's say, for example, that we are interested in the effects of a particular case on the rates of allowance.   }{\i\ulnone\ulc0\b\ab0\rtlch \ltrch\loch
+KSR Int'l Co. v. Teleflex, Inc.}{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+, 550 U.S. 398 (2007) was decided April 30, 2007.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[as.Date(df$filingDate) < as.Date("2007-04-30"),]$status)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+         }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Abandoned            Allowed Unknown or Pending }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+88                456                 44}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+Before KSR, of the applications with a known status, 83.82% of patent applications were allowed.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[as.Date(df$filingDate) >= as.Date("2007-04-30"),]$status)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+         }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Abandoned            Allowed Unknown or Pending }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+                }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+18                 57                125}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+After KSR, of the applications with a known status, only 76% of patent applications were allowed. What about prosecution length?}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\ql{\scaps0\caps0\cf3\expnd0\expndtw0\i0\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[as.Date(df$filingDate) < as.Date("2007-04-30"),]$prosecutionLength)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+    }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+0.0   313.0   521.0   644.5   822.0  3880.0     127 }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf3\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+> summary(df[as.Date(df$filingDate) >= as.Date("2007-04-30"),]$prosecutionLength)}
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+   }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's }
+\par \pard\plain \s21\sb0\sa0\hich\af6\dbch\af3\afs20\loch\f3\fs20\sl225\slmult0\widctlpar\sb0\sa0{\scaps0\caps0\cf2\expnd0\expndtw0\rtlch \ltrch
+  }{\scaps0\caps0\cf2\expnd0\expndtw0\i0\b0\rtlch \ltrch\loch\fs20\loch\f4
+227.0   417.0   713.5   731.2   907.2  1468.0     142}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+Here we observe that, since the date of KSR's decision, the median prosecution length has increased by 192 days. While this is no proof of causation, that is, that KSR is responsible for for decreased rates of allowance and increased prosecution length, it certainly is data corroborating such a theory.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af9\langfe2052\dbch\af7\afs24\lang1081\loch\f0\fs24\lang1033\ql{\ulnone\ulc0\b0\ab0\rtlch \ltrch\loch
+I hope this brief demonstration of how to use the data in "patents.csv" is useful. }
+\par }
